@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ubicación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="locationForm">
+        <label for="pais">País:</label>
+        <select id="pais" onchange="acEstados()">
+            <option value="" selected disabled>Selecciona un país</option>
+            <option value="Mexico">México</option>
+            <option value="Brazil">Brasil</option>
+        </select>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" disabled onchange="acMunicipios()">
+            <option value="" selected disabled>Selecciona un estado</option>
+        </select>
+
+        <label for="municipio">Municipio:</label>
+        <select id="municipio" disabled onchange="acLocalidades()">
+            <option value="" selected disabled>Selecciona un municipio</option>
+        </select>
+
+        <label for="localidad">Localidad:</label>
+        <select id="localidad" disabled>
+            <option value="" selected disabled>Selecciona una localidad</option>
+        </select>
+        <br>
+        <button type="button"  onclick="mostrarDatos()">Enviar</button>
+
+    </form>
+</div>
+
+<div class="container" id="DataCard">
+    <div id="selectedData"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
