@@ -6,7 +6,7 @@
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons":[{
-        "src":"Captura de pantalla 2024-02-02 002124.png",
+        "src":"female.png",
         "type":"image/png",
         "sizes": "512x512"
     }
