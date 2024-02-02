@@ -1,9 +1,21 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => {
-            console.log('Service Worker registrado con éxito:', registration);
-        })
-        .catch((error) => {
-            console.error('Error al registrar el Service Worker:', error);
-        });
-}
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+      caches.open('my-cache').then((cache) => {
+        return cache.addAll([
+          '/',
+          '/index.html',
+          '/manifest.json',
+          '/icon.png',
+        ]);
+      })
+    );
+  });
+  
+  self.addEventListener('fetch', (event) => {
+    event.respondWith(
+      caches.match(event.request).then((response) => {
+        return response || fetch(event.request);
+      })
+    );
+  });
+  

@@ -46,6 +46,17 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+                console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch((error) => {
+                console.error('Error al registrar el Service Worker:', error);
+            });
+    }
+</script>
 <script src="service-worker.js"></script>
 </body>
 </html>
