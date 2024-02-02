@@ -107,3 +107,7 @@ function mostrarDatos() {
     
     document.getElementById('DataCard').style.display = 'block';
 }
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+  

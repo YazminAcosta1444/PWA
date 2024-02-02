@@ -43,17 +43,7 @@
 <div class="container" id="DataCard">
     <div id="selectedData"></div>
 </div>
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-        .then((registration) => {
-            console.log('Service Worker registrado con éxito:', registration);
-        })
-        .catch((error) => {
-            console.error('Error al registrar el Service Worker:', error);
-        });    
-    }
-</script>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
