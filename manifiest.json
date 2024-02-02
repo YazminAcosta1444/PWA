@@ -1,0 +1,9 @@
+{
+    "name": "Formulario de Ubicación",
+    "short_name": "Ubicación",
+    "description": "Una aplicación para seleccionar ubicaciones",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+}
