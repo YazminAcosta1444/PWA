@@ -6,8 +6,8 @@
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons":[{
-        "src":"female.jpg",
-        "type":"image/jpg",
+        "src":"Datos.png",
+        "type":"image/png",
         "sizes": "512x512"
     }
 ]
