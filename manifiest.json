@@ -1,10 +1,15 @@
 {
     "name": "Mi PWA",
-    "short_name": "PWA",
-    "description": "Descripción de mi PWA",
+    "short_name": "PWA del formulario",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#000000"
-  }
+    "theme_color": "#000000",
+    "icons":[{
+        "src":"Captura de pantalla 2024-02-02 002124.png",
+        "type":"image/png",
+        "sizes": "512x512"
+    }
+]
+}
   
